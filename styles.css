@@ -51,3 +51,7 @@ button {
     cursor: pointer;
     font-weight: bold;
 }
+
+footer{
+    font-size: 12px;
+}
