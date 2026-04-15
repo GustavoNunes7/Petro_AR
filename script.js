@@ -74,6 +74,14 @@ async function enviar() {
     input.value = "";
 }
 
+// ⌨️ ENTER PARA ENVIAR
+input.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // evita quebra de linha (se for textarea)
+        enviar();
+    }
+});
+
 // 🔥 TESTE AUTOMÁTICO AO ABRIR
 window.onload = () => {
     logMsg("sys", "> sistema iniciado com sucesso");
